@@ -11,31 +11,60 @@ body {
 }
 
 p {
-    margin-block-end: 0;
+    margin: 0;
+}
+
+header {
+    margin-top: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    max-height: 52px;
 }
 
 nav p {
-    display: inline;
-    float: left;
     margin: 0 1rem;
-    padding-top: 0.5rem;
     color: #523e77;
     font-size: 1.5rem;
     font-family: "Dancing Script";
+    align-self: center;
+    text-wrap: nowrap;
 }
 
 input {
-    display: inline;
-    float: left;
-    margin-left: 2rem;
-    padding: 1rem 26.75rem;
     border-radius: 2rem;
+    min-width: 10rem;
+    min-height: 46px;
+    width: 100%;
+    text-align: center;
+}
+
+.search-container {
+    width: calc(100% - 800px);
+    min-width: 10rem;
+    margin-right: 1rem;
+    position: relative;
+    bottom: 5px;
+}
+
+.search-container img {
+    position: relative;
+    bottom: 3rem;
+    left: 0.75rem;
+}
+
+.search-pic {
+    cursor: pointer;
 }
 
 ul {
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
+    margin: 0;
+    padding-left: 0;
 }
 
 li {
@@ -60,11 +89,13 @@ h1 {
     text-align: center;
     font-size: 6rem;
     font-family: "Dancing Script";
+    text-wrap: nowrap;
 }
 
 #mission-statement {
     position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 #mission-statement img {
@@ -77,16 +108,17 @@ h1 {
     top: 90%;
     left: 50%;
     width: 70%;
-    height: 10%;
     margin-left: -35%;
     color: white;
     background-color: #523e77;
+    text-aligN: center;
 }
 
 #services p {
     text-align: center;
     padding: 5rem 0 0 0;
     font-size: 5rem;
+    margin-top: 3rem;
 }
 
 h4 {
@@ -100,28 +132,29 @@ h4 {
     justify-self: center;
 }
 
-.first-row {
+.row {
     display: flex;
     justify-content: space-around;
     flex: 1 1 0px;
+    flex-wrap: wrap;
 }
 
-.first-row img {
+.row h4 {
+    margin-bottom: 0;
+}
+
+.row img {
     width: 35rem;
     height: 25rem;
     object-fit: cover;
 } 
 
-.second-row {
-    display: flex;
-    justify-content: space-around;
-    flex: 1 1 0px;
+.row div {
+    margin-bottom: 4rem;
 }
 
-.second-row img {
-    width: 35rem;
-    height: 25rem;
-    object-fit: cover;
+.row div:hover {
+    cursor: pointer;
 }
 
 #team {
@@ -136,15 +169,21 @@ h4 {
     justify-content: space-around;
     background-image: url("https://images.unsplash.com/photo-1716908331581-15c6d49c7d73?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     padding: 5rem;
+    flex-wrap: wrap;
 }
 
 .team-container p {
     font-size: 1.5rem;
-    background-color: lightgreen;
+    background-color: #ffe062;
     color: black;
     padding: 0 1rem;
     border-radius: 2rem;
     text-align: center;
+}
+
+.employee p {
+    margin-top: -5%;
+    margin-bottom: 5rem;
 }
 
 #team img {
@@ -163,6 +202,7 @@ footer {
 
 footer p {
     font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 footer h2 {
@@ -175,6 +215,10 @@ footer h2 {
 
 .customer-service {
     padding: 1rem;
+}
+
+.customer-service p:hover {
+    cursor: pointer;
 }
 
 .contact {
